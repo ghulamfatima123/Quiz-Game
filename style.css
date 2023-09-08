@@ -1,0 +1,228 @@
+/* Global Styles */
+/* Background Styles */
+body {
+    background: linear-gradient(to bottom, #91a1ac, #cfd8dd); /* Gradient background */
+    background-attachment: fixed; /* Fixed background */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire viewport */
+    color: #333; /* Dark text color for better readability */
+    font-family: 'Arial', sans-serif; /* Choose a widely supported font */
+}
+.start-container{
+    background-image: url(quiz.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100vh;
+    border-radius: 10px; /* Rounded corners for the container */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+
+}
+/* Style for the submit button */
+button {
+    background-color: #0b0c0c; /* Blue background for the button */
+    color: #fffcfc; /* White text color for the button */
+    border: none; /* Remove the button border */
+    padding: 12px 20px; /* Add padding to the button */
+    font-size: 16px; /* Font size */
+    border-radius: 10px; /* Rounded corners for the button */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth background color transition */
+
+    /* Optional: Add a box-shadow for a subtle hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effect for the button */
+button:hover {
+    
+    background-color: #b4cce2; /* Darker blue on hover */
+}
+.container {
+    background-color: #fff; /* White background for the quiz container */
+    border-radius: 10px; /* Rounded corners for the container */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    background-image: url(qui.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    /* height: 100vh; */
+}
+hr {
+    margin: 1rem 0;
+    color: white;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: 1;
+}
+/* Quiz Header Styles */
+h1 ,h2{
+    color: #0e0c0c; /* Dark text color for headers */
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: Times, serif;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Timer Styles */
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4676a5; /* Blue timer text */
+    margin-top: 20px;
+}
+
+/* Question and Choices Styles */
+#question-container {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 20px; /* Slightly larger font for questions */
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+    margin-bottom: 10px;
+    animation: slideInLeft 0.5s ease-in-out;
+}
+
+#choices {
+    font-size: 18px; /* Font size for answer choices */
+    margin-top: 10px;
+    animation: slideInRight 0.5s ease-in-out;
+}
+
+/* Navigation Button Styles */
+#submit {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: bounce 3s ease-in-out infinite alternate;
+}
+
+#prev {
+    background-color: #ccc; /* Light gray background for Previous button */
+    color: #333;
+}
+
+#next {
+    background-color: #007bff; /* Blue background for Next button */
+    color: #fff; /* White text color for Next button */
+}
+
+#submit {
+    background-color: #28a745; /* Green background for Submit button */
+    color: #fff; /* White text color for Submit button */
+}
+
+/* Quiz Results Styles */
+#results {
+    font-size: 24px; /* Larger font size for quiz results */
+    font-weight: bold;
+    margin-top: 20px;
+    color: #28a745; /* Green text color for results */
+}
+
+/* Define keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from, to {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* Add styles for the #app element and its children */
+
+/* Style for the #app container */
+/* Add styles for the #app element and its children */
+
+/* Style for the #app container */
+#app {
+    background-color: white; /* Background color for the note container */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners for the container */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-top: 20px; /* Space between quiz and note sections */
+    text-align: center; /* Center the content horizontally */
+}
+
+/* Style for input fields within the #create-note section */
+#create-note input[type="text"],
+#create-note textarea {
+    width: 100%; /* Make the input fields fill the container width */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 15px; /* Space between input fields */
+    border: 1px solid #ccc; /* Add a border for clarity */
+    border-radius: 5px; /* Rounded corners for input fields */
+    transition: border-color 0.2s; /* Smooth border color transition */
+}
+
+/* Add hover effect for input fields */
+#create-note input[type="text"]:hover,
+#create-note textarea:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+/* Style for the submit button within the #create-note section */
+#create-note button {
+    background-color: #007bff; /* Blue background for the submit button */
+    color: #fff; /* White text color for the button */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Add padding to the button */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+/* Add hover effect for the submit button */
+#create-note button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#result{
+    font-size: large;
+    font-weight: bold;
+  text-decoration: solid;
+}
